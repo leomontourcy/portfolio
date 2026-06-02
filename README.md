@@ -2,7 +2,7 @@
 
 Bienvenue sur le dépôt de mon portfolio personnel. Ce site a été conçu pour présenter mon parcours en **BUT Informatique** à l'IUT Paul Sabatier de Toulouse, mes compétences techniques, ainsi que mes projets de développement.
 
-🔗 **Version en ligne :** [Insère ici l'URL GitHub Pages de ton site]
+🔗 **Version en ligne : https://leomontourcy.github.io/portfolio/
 
 ## ✨ Fonctionnalités
 * **Design Éditorial Minimaliste :** Une interface épurée axée sur la lisibilité et la typographie.
