@@ -45,6 +45,36 @@ function applyLang(lang) {
     }
   });
 
+  // ── Theme Switch (Dark/Light Mode) ───────────
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon   = themeToggle.querySelector('.theme-toggle__icon');
+
+// 1. Vérifier s'il y a un choix enregistré ou utiliser la préférence du système
+const savedTheme = localStorage.getItem('theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+  document.documentElement.classList.add('dark-mode');
+  themeIcon.textContent = '☀️';
+} else {
+  document.documentElement.classList.remove('dark-mode');
+  themeIcon.textContent = '🌙';
+}
+
+// 2. Écouter le clic sur le bouton
+themeToggle.addEventListener('click', () => {
+  const isDark = document.documentElement.classList.toggle('dark-mode');
+  
+  // Mettre à jour l'icône et le localStorage
+  if (isDark) {
+    themeIcon.textContent = '☀️';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    themeIcon.textContent = '🌙';
+    localStorage.setItem('theme', 'light');
+  }
+});
+
   // Translate placeholders
   document.querySelectorAll('[data-placeholder-fr], [data-placeholder-en]').forEach(el => {
     const ph = el.getAttribute('data-placeholder-' + lang);
