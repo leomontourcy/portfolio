@@ -865,7 +865,6 @@ body {
 .br-desk { display: none; }
 @media (min-width: 640px) { .br-desk { display: block; } }
 
-
 /* ── THEME SOMBRE (DARK MODE) ──────────────── */
 html.dark-mode {
   --bg: #121210;
