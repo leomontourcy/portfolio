@@ -13,9 +13,10 @@
 <body>
 
   <!-- NAV -->
-  <nav class="nav" id="navbar">
+<nav class="nav" id="navbar">
     <div class="nav__inner">
-      <a href="#" class="nav__logo">Léo Montourcy</span></a>
+      <a href="#" class="nav__logo">Léo Montourcy<span>.</span></a>
+      
       <ul class="nav__links">
         <li><a href="#about"     data-fr="À propos"    data-en="About">À propos</a></li>
         <li><a href="#skills"    data-fr="Compétences" data-en="Skills">Compétences</a></li>
@@ -25,24 +26,22 @@
         <li><a href="#hobbies"   data-fr="Loisirs"     data-en="Hobbies">Loisirs</a></li>
         <li><a href="#contact"   data-fr="Contact"     data-en="Contact">Contact</a></li>
       </ul>
-      <button class="lang-switch" id="langSwitch" title="Switch language">
-        <span class="lang-switch__flag">🇬🇧</span>
-        <span class="lang-switch__label" data-fr="EN" data-en="FR">EN</span>
-      </button>
+
+      <div class="nav__actions" style="display: flex; align-items: center; gap: 0.5rem;">
+        <button class="lang-switch" id="langSwitch" title="Switch language">
+          <span class="lang-switch__flag">🇬🇧</span>
+          <span class="lang-switch__label" data-fr="EN" data-en="FR">EN</span>
+        </button>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="Changer de thème" title="Changer de thème">
+          <span class="theme-toggle__icon">🌙</span>
+        </button>
+      </div>
+
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <ul class="nav__mobile" id="navMobile">
-      <li><a href="#about"     class="mobile-link" data-fr="À propos"    data-en="About">À propos</a></li>
-      <li><a href="#skills"    class="mobile-link" data-fr="Compétences" data-en="Skills">Compétences</a></li>
-      <li><a href="#education" class="mobile-link" data-fr="Parcours"    data-en="Education">Parcours</a></li>
-      <li><a href="#projects"  class="mobile-link" data-fr="Projets"     data-en="Projects">Projets</a></li>
-      <li><a href="#languages" class="mobile-link" data-fr="Langues"     data-en="Languages">Langues</a></li>
-      <li><a href="#hobbies"   class="mobile-link" data-fr="Loisirs"     data-en="Hobbies">Loisirs</a></li>
-      <li><a href="#contact"   class="mobile-link" data-fr="Contact"     data-en="Contact">Contact</a></li>
-    </ul>
-  </nav>
 
   <!-- HERO -->
   <section class="hero" id="home">
