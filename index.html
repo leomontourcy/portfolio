@@ -12,10 +12,9 @@
 </head>
 <body>
 
-  <!-- NAV -->
-<nav class="nav" id="navbar">
+  <nav class="nav" id="navbar">
     <div class="nav__inner">
-      <a href="#" class="nav__logo">Léo Montourcy</span></a>
+      <a href="#" class="nav__logo">Léo Montourcy<span>.</span></a>
       
       <ul class="nav__links">
         <li><a href="#about"     data-fr="À propos"    data-en="About">À propos</a></li>
@@ -42,15 +41,25 @@
         <span></span><span></span><span></span>
       </button>
     </div>
+    
+    <ul class="nav__mobile" id="navMobile">
+      <li><a href="#about"     class="mobile-link" data-fr="À propos"    data-en="About">À propos</a></li>
+      <li><a href="#skills"    class="mobile-link" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+      <li><a href="#education" class="mobile-link" data-fr="Parcours"    data-en="Education">Parcours</a></li>
+      <li><a href="#projects"  class="mobile-link" data-fr="Projets"     data-en="Projects">Projets</a></li>
+      <li><a href="#languages" class="mobile-link" data-fr="Langues"     data-en="Languages">Langues</a></li>
+      <li><a href="#hobbies"   class="mobile-link" data-fr="Loisirs"     data-en="Hobbies">Loisirs</a></li>
+      <li><a href="#contact"   class="mobile-link" data-fr="Contact"     data-en="Contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero__label" data-fr="Étudiant en BUT Informatique — IUT Paul Sabatier, Toulouse" data-en="Computer Science Student — BUT Informatique, Toulouse">Étudiant en BUT Informatique — IUT Paul Sabatier, Toulouse</div>
     <h1 class="hero__title">
       Montourcy<br /><em>Léo</em>
     </h1>
-    <p class="hero__sub" data-fr="Étudiant en informatique, je construis des logiciels pratiques et fonctionnels. Spécialisé en Java, Kotlin, Ada, HTML, réseaux, développement d'applications et bases de données." data-en="Computer Science student building practical software. Focused on Java, Kotlin, Ada, HTML, networking, app development, and database systems.">
-      Étudiant en informatique, je construis des logiciels pratiques et fonctionnels. Spécialisé en Java, Kotlin, Ada, HTML, réseaux, développement d'applications et bases de données.
+    <p class="hero__sub" data-fr="Étudiant en BUT Informatique, je m’intéresse à la conception de logiciels utiles et simples d’utilisation." data-en="As a Computer Science student, I am focused on designing useful and user-friendly software.">
+      Étudiant en BUT Informatique, je m’intéresse à la conception de logiciels utiles et simples d’utilisation.
     </p>
     <div class="hero__cta">
       <a href="#projects" class="btn btn--primary" data-fr="Voir mes projets" data-en="View Projects">Voir mes projets</a>
@@ -67,7 +76,6 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section class="about section" id="about">
     <div class="container">
       <div class="section-label" data-fr="01 — À propos" data-en="01 — About">01 — À propos</div>
@@ -75,7 +83,7 @@
         <div class="about__text">
           <h2 class="section-title" data-fr="Construire avec<br /><em>intention.</em>" data-en="Building with<br /><em>intention.</em>">Construire avec<br /><em>intention.</em></h2>
           <p data-fr="Je suis étudiant en informatique au BUT Informatique, spécialisé dans la conception de logiciels clairs et fonctionnels." data-en="I am a computer science student at BUT Informatique, specializing in the design of clear and functional software.">Je suis étudiant en informatique au BUT Informatique, spécialisé dans la conception de logiciels clairs et fonctionnels.</p>
-          <p data-fr="Mes compétences couvrent Java, Ada, Kotlin, HTML, le développement Low-Code, les réseaux et les bases de données, avec un intérêt particulier pour le développement d'applications et la gestion de données." data-en="My skills encompass Java, Ada, Kotlin, HTML, Low-Code Development, networks, and database systems, with a particular interest in application development and database management.">Mes compétences couvrent Java, Ada, Kotlin, HTML, le développement Low-Code, les réseaux et les bases de données, avec un intérêt particulier pour le développement d'applications et la gestion de données.</p>
+          <p data-fr="Mes compétences couvrent Java, Ada, Kotlin, HTML, le développement Low-Code, les réseaux et les bases de données, avec un intérêt particulier pour le développement d'applications et la gestion de données." data-en="Mes compétences couvrent Java, Ada, Kotlin, HTML, le développement Low-Code, les réseaux et les bases de données, avec un intérêt particulier pour le développement d'applications et la gestion de données.">Mes compétences couvrent Java, Ada, Kotlin, HTML, le développement Low-Code, les réseaux et les bases de données, avec un intérêt particulier pour le développement d'applications et la gestion de données.</p>
           <p data-fr="Je suis actuellement à la recherche d'un stage au sein d'équipes expérimentées pour contribuer, apprendre et progresser." data-en="I am currently seeking an internship within experienced teams to contribute, learn, and grow.">Je suis actuellement à la recherche d'un stage au sein d'équipes expérimentées pour contribuer, apprendre et progresser.</p>
           <div class="about__meta">
             <div class="meta-item">
@@ -108,7 +116,6 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
   <section class="skills section" id="skills">
     <div class="container">
       <div class="section-label" data-fr="02 — Compétences" data-en="02 — Skills">02 — Compétences</div>
@@ -153,7 +160,6 @@
     </div>
   </section>
 
-  <!-- EDUCATION -->
   <section class="education section" id="education">
     <div class="container">
       <div class="section-label" data-fr="03 — Parcours" data-en="03 — Education">03 — Parcours</div>
@@ -164,7 +170,7 @@
           <div class="timeline__dot"></div>
           <div class="timeline__year">2024<br />— <span data-fr="Présent" data-en="Present">Présent</span></div>
           <div class="timeline__card">
-            <div class="timeline__tag" data-fr="Enseignement Supérieur" data-en="Higher Education">Enseignement Supérieur</div>
+            <div class="timeline__tag" data-fr="Enseignement Superior" data-en="Higher Education">Enseignement Supérieur</div>
             <h3 data-fr="BUT Informatique" data-en="BUT Computer Science">BUT Informatique</h3>
             <p class="timeline__place">IUT Paul Sabatier — Toulouse</p>
             <p data-fr="Bachelor Universitaire de Technologie en Informatique. Couvrant le développement logiciel, les bases de données, les réseaux et la conception d'applications sur un cursus de 3 ans." data-en="Bachelor's University of Technology in Computer Science. Covering software development, databases, networking, and application design across a 3-year curriculum.">Bachelor Universitaire de Technologie en Informatique. Couvrant le développement logiciel, les bases de données, les réseaux et la conception d'applications sur un cursus de 3 ans.</p>
@@ -194,7 +200,6 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section class="projects section" id="projects">
     <div class="container">
       <div class="section-label" data-fr="04 — Projets" data-en="04 — Projects">04 — Projets</div>
@@ -212,7 +217,7 @@
         <article class="project-card">
           <div class="project-card__meta">
             <span class="project-tag">HTML</span>
-            <span class="project-year">2026</span>
+            <span class="project-year">2025</span>
           </div>
           <h3 data-fr="Vitrine du BUT Informatique" data-en="BUT Informatique Showcase">Vitrine du BUT Informatique</h3>
           <p data-fr="Site web présentant les compétences travaillées en première année de BUT Informatique, conçu pour rendre ce diplôme plus attractif et accessible aux futurs étudiants." data-en="A website presenting the skills developed during the first year of the BUT Computer Science programme, designed to make the degree more accessible and attractive to prospective students.">Site web présentant les compétences travaillées en première année de BUT Informatique, conçu pour rendre ce diplôme plus attractif et accessible aux futurs étudiants.</p>
@@ -227,7 +232,7 @@
         <article class="project-card">
           <div class="project-card__meta">
             <span class="project-tag" data-fr="Analyse de données" data-en="Data Analysis">Analyse de données</span>
-            <span class="project-year">2026</span>
+            <span class="project-year">2025</span>
           </div>
           <h3 data-fr="Réseaux sociaux & Résultats scolaires" data-en="Social Media & Academic Performance">Réseaux sociaux & Résultats scolaires</h3>
           <p data-fr="Analyse d'un jeu de données Kaggle portant sur l'usage des réseaux sociaux par des étudiants du monde entier. L'objectif était de déterminer s'il existe un lien entre les résultats scolaires et l'addiction aux réseaux sociaux." data-en="Data analysis project using a Kaggle dataset on social media usage among students worldwide. The goal was to determine whether a link exists between academic results and social media addiction, examining effects on mental health and personal relationships.">Analyse d'un jeu de données Kaggle portant sur l'usage des réseaux sociaux par des étudiants du monde entier. L'objectif était de déterminer s'il existe un lien entre les résultats scolaires et l'addiction aux réseaux sociaux.</p>
@@ -243,7 +248,6 @@
     </div>
   </section>
 
-  <!-- LANGUAGES -->
   <section class="languages section" id="languages">
     <div class="container">
       <div class="section-label" data-fr="05 — Langues" data-en="05 — Languages">05 — Langues</div>
@@ -284,7 +288,6 @@
     </div>
   </section>
 
-  <!-- HOBBIES -->
   <section class="hobbies section" id="hobbies">
     <div class="container">
       <div class="section-label" data-fr="06 — Hors écran" data-en="06 — Beyond the Screen">06 — Hors écran</div>
@@ -319,7 +322,6 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section class="contact section" id="contact">
     <div class="container">
       <div class="section-label" data-fr="07 — Contact" data-en="07 — Contact">07 — Contact</div>
@@ -358,7 +360,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
