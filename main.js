@@ -38,7 +38,6 @@ if (langSwitch) {
     currentLang = lang;
     document.documentElement.lang = lang;
 
-    // Translate all [data-fr] / [data-en] elements
     document.querySelectorAll('[data-fr], [data-en]').forEach(el => {
       const text = el.getAttribute('data-' + lang);
       if (!text) return;
@@ -49,13 +48,11 @@ if (langSwitch) {
       }
     });
 
-    // Translate placeholders
     document.querySelectorAll('[data-placeholder-fr], [data-placeholder-en]').forEach(el => {
       const ph = el.getAttribute('data-placeholder-' + lang);
       if (ph) el.placeholder = ph;
     });
 
-    // Update switch button if elements exist
     if (langFlag && langLabel) {
       if (lang === 'fr') {
         langFlag.textContent  = '🇬🇧';
@@ -66,7 +63,6 @@ if (langSwitch) {
       }
     }
 
-    // Save preference
     localStorage.setItem('portfolioLang', lang);
   }
 
@@ -74,7 +70,6 @@ if (langSwitch) {
     applyLang(currentLang === 'fr' ? 'en' : 'fr');
   });
 
-  // Load saved preference (default: fr)
   const savedLang = localStorage.getItem('portfolioLang') || 'fr';
   applyLang(savedLang);
 }
@@ -82,7 +77,8 @@ if (langSwitch) {
 // ── Theme Switch (Dark/Light Mode) ───────────
 const themeToggle = document.getElementById('themeToggle');
 if (themeToggle) {
-  const themeIcon = themeToggle.querySelector('.theme-toggle__icon');
+  // CORRECTION ICI : On cherche l'élément par son ID ou directement l'icône interne de manière sécurisée
+  const themeIcon = themeToggle.querySelector('.theme-toggle__icon') || themeToggle;
 
   const savedTheme = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
