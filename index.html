@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Léo Montourcy — Portfolio</title>
+  <meta name="description" content="Portfolio de Léo Montourcy, étudiant en BUT Informatique à Toulouse." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Léo Montourcy</span></a>
+      <ul class="nav__links">
+        <li><a href="#about"     data-fr="À propos"    data-en="About">À propos</a></li>
+        <li><a href="#skills"    data-fr="Compétences" data-en="Skills">Compétences</a></li>
+        <li><a href="#education" data-fr="Parcours"    data-en="Education">Parcours</a></li>
+        <li><a href="#projects"  data-fr="Projets"     data-en="Projects">Projets</a></li>
+        <li><a href="#languages" data-fr="Langues"     data-en="Languages">Langues</a></li>
+        <li><a href="#hobbies"   data-fr="Loisirs"     data-en="Hobbies">Loisirs</a></li>
+        <li><a href="#contact"   data-fr="Contact"     data-en="Contact">Contact</a></li>
+      </ul>
+      <button class="lang-switch" id="langSwitch" title="Switch language">
+        <span class="lang-switch__flag">🇬🇧</span>
+        <span class="lang-switch__label" data-fr="EN" data-en="FR">EN</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav__mobile" id="navMobile">
+      <li><a href="#about"     class="mobile-link" data-fr="À propos"    data-en="About">À propos</a></li>
+      <li><a href="#skills"    class="mobile-link" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+      <li><a href="#education" class="mobile-link" data-fr="Parcours"    data-en="Education">Parcours</a></li>
+      <li><a href="#projects"  class="mobile-link" data-fr="Projets"     data-en="Projects">Projets</a></li>
+      <li><a href="#languages" class="mobile-link" data-fr="Langues"     data-en="Languages">Langues</a></li>
+      <li><a href="#hobbies"   class="mobile-link" data-fr="Loisirs"     data-en="Hobbies">Loisirs</a></li>
+      <li><a href="#contact"   class="mobile-link" data-fr="Contact"     data-en="Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__label" data-fr="Étudiant en BUT Informatique — IUT Paul Sabatier, Toulouse" data-en="Computer Science Student — BUT Informatique, Toulouse">Étudiant en BUT Informatique — IUT Paul Sabatier, Toulouse</div>
+    <h1 class="hero__title">
+      Montourcy<br /><em>Léo</em>
+    </h1>
+    <p class="hero__sub" data-fr="Étudiant en informatique, je construis des logiciels pratiques et fonctionnels. Spécialisé en Java, Kotlin, Ada, HTML, réseaux, développement d'applications et bases de données." data-en="Computer Science student building practical software. Focused on Java, Kotlin, Ada, HTML, networking, app development, and database systems.">
+      Étudiant en informatique, je construis des logiciels pratiques et fonctionnels. Spécialisé en Java, Kotlin, Ada, HTML, réseaux, développement d'applications et bases de données.
+    </p>
+    <div class="hero__cta">
+      <a href="#projects" class="btn btn--primary" data-fr="Voir mes projets" data-en="View Projects">Voir mes projets</a>
+      <a href="#contact" class="btn btn--ghost" data-fr="Me contacter" data-en="Get in Touch">Me contacter</a>
+    </div>
+    <div class="hero__scroll">
+      <span data-fr="Défiler" data-en="Scroll">Défiler</span>
+      <svg width="16" height="24" viewBox="0 0 16 24"><rect x="6" y="0" width="4" height="4" rx="2" fill="currentColor" opacity="0.4"/><rect x="6" y="8" width="4" height="4" rx="2" fill="currentColor" opacity="0.6"/><rect x="6" y="16" width="4" height="4" rx="2" fill="currentColor"/></svg>
+    </div>
+    <div class="hero__deco">
+      <div class="deco-ring deco-ring--1"></div>
+      <div class="deco-ring deco-ring--2"></div>
+      <div class="deco-grid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label" data-fr="01 — À propos" data-en="01 — About">01 — À propos</div>
+      <div class="about__grid">
+        <div class="about__text">
+          <h2 class="section-title" data-fr="Construire avec<br /><em>intention.</em>" data-en="Building with<br /><em>intention.</em>">Construire avec<br /><em>intention.</em></h2>
+          <p data-fr="Je suis étudiant en informatique au BUT Informatique, spécialisé dans la conception de logiciels clairs et fonctionnels." data-en="I am a computer science student at BUT Informatique, specializing in the design of clear and functional software.">Je suis étudiant en informatique au BUT Informatique, spécialisé dans la conception de logiciels clairs et fonctionnels.</p>
+          <p data-fr="Mes compétences couvrent Java, Ada, Kotlin, HTML, le développement Low-Code, les réseaux et les bases de données, avec un intérêt particulier pour le développement d'applications et la gestion de données." data-en="My skills encompass Java, Ada, Kotlin, HTML, Low-Code Development, networks, and database systems, with a particular interest in application development and database management.">Mes compétences couvrent Java, Ada, Kotlin, HTML, le développement Low-Code, les réseaux et les bases de données, avec un intérêt particulier pour le développement d'applications et la gestion de données.</p>
+          <p data-fr="Je suis actuellement à la recherche d'un stage au sein d'équipes expérimentées pour contribuer, apprendre et progresser." data-en="I am currently seeking an internship within experienced teams to contribute, learn, and grow.">Je suis actuellement à la recherche d'un stage au sein d'équipes expérimentées pour contribuer, apprendre et progresser.</p>
+          <div class="about__meta">
+            <div class="meta-item">
+              <span class="meta-label" data-fr="Localisation" data-en="Location">Localisation</span>
+              <span>Toulouse, France</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label" data-fr="Disponibilité" data-en="Availability">Disponibilité</span>
+              <span class="status-dot" data-fr="Recherche un stage" data-en="Seeking internship">Recherche un stage</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label" data-fr="Formation" data-en="Education">Formation</span>
+              <span data-fr="BUT Informatique — 1ère année" data-en="BUT Computer Science — 1st year">BUT Informatique — 1ère année</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label" data-fr="Langues" data-en="Languages">Langues</span>
+              <span data-fr="Français, Anglais, Espagnol" data-en="French, English, Spanish">Français, Anglais, Espagnol</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__image-wrap">
+          <div class="about__image">
+            <div class="about__image-inner">LM</div>
+          </div>
+          <div class="about__image-tag">
+            <span class="mono" data-fr="BUT Info — 1ère année" data-en="1st year BUT Info">BUT Info — 1ère année</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label" data-fr="02 — Compétences" data-en="02 — Skills">02 — Compétences</div>
+      <h2 class="section-title" data-fr="Expertise<br /><em>Technique</em>" data-en="Technical<br /><em>Expertise</em>">Expertise<br /><em>Technique</em></h2>
+      <div class="skills__grid skills__grid--wide">
+        <div class="skill-card">
+          <div class="skill-card__icon">☕</div>
+          <h3>Java</h3>
+          <p class="skill-card__desc" data-fr="Programmation Orientée Objet / Applications" data-en="Object-Oriented Programming / Applications">Programmation Orientée Objet / Applications</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🤖</div>
+          <h3>Kotlin</h3>
+          <p class="skill-card__desc" data-fr="Développement Android / Architecture Propre" data-en="Android Development / Clean Architecture">Développement Android / Architecture Propre</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🔷</div>
+          <h3>Ada</h3>
+          <p class="skill-card__desc" data-fr="Programmation Structurée / Logique Logicielle" data-en="Structured Programming / Software Logic">Programmation Structurée / Logique Logicielle</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🌐</div>
+          <h3>HTML</h3>
+          <p class="skill-card__desc" data-fr="Structure Web / Balisage Sémantique" data-en="Web Structure / Semantic Markup">Structure Web / Balisage Sémantique</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">⚙️</div>
+          <h3>Low-Code Development</h3>
+          <p class="skill-card__desc" data-fr="Conception d'Applications / Logique de Workflow" data-en="Application Design / Workflow Logic">Conception d'Applications / Logique de Workflow</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🗄️</div>
+          <h3 data-fr="Bases de données" data-en="Databases">Bases de données</h3>
+          <p class="skill-card__desc" data-fr="Gestion des Données / Exploitation SQL" data-en="Data Management / SQL Exploitation">Gestion des Données / Exploitation SQL</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🔗</div>
+          <h3 data-fr="Réseaux" data-en="Networking">Réseaux</h3>
+          <p class="skill-card__desc" data-fr="Systèmes / Fondamentaux Réseau" data-en="Systems / Network Fundamentals">Systèmes / Fondamentaux Réseau</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-label" data-fr="03 — Parcours" data-en="03 — Education">03 — Parcours</div>
+      <h2 class="section-title" data-fr="Mon<br /><em>Parcours</em>" data-en="My<br /><em>Background</em>">Mon<br /><em>Parcours</em></h2>
+      <div class="timeline">
+
+        <div class="timeline__item timeline__item--current">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2024<br />— <span data-fr="Présent" data-en="Present">Présent</span></div>
+          <div class="timeline__card">
+            <div class="timeline__tag" data-fr="Enseignement Supérieur" data-en="Higher Education">Enseignement Supérieur</div>
+            <h3 data-fr="BUT Informatique" data-en="BUT Computer Science">BUT Informatique</h3>
+            <p class="timeline__place">IUT Paul Sabatier — Toulouse</p>
+            <p data-fr="Bachelor Universitaire de Technologie en Informatique. Couvrant le développement logiciel, les bases de données, les réseaux et la conception d'applications sur un cursus de 3 ans." data-en="Bachelor's University of Technology in Computer Science. Covering software development, databases, networking, and application design across a 3-year curriculum.">Bachelor Universitaire de Technologie en Informatique. Couvrant le développement logiciel, les bases de données, les réseaux et la conception d'applications sur un cursus de 3 ans.</p>
+            <div class="timeline__skills">
+              <span>Java</span><span>Kotlin</span><span>Ada</span><span>SQL</span><span data-fr="Réseaux" data-en="Networking">Réseaux</span><span>Low-Code</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2021 — 2024</div>
+          <div class="timeline__card">
+            <div class="timeline__tag" data-fr="Enseignement Secondaire" data-en="Secondary Education">Enseignement Secondaire</div>
+            <h3>Baccalauréat STI2D — Option SIN</h3>
+            <p class="timeline__place">Lycée Cabanis — Brive-la-Gaillarde (19100)</p>
+            <p data-fr="Baccalauréat technologique en Sciences et Technologies de l'Industrie et du Développement Durable, spécialité Systèmes d'Information et Numérique (SIN). Électronique, systèmes embarqués et bases de la programmation." data-en="Technological baccalaureate in Industrial Technology and Sustainable Development, specialising in Digital and Computer Systems (SIN). Focus on electronics, embedded systems, and programming fundamentals.">Baccalauréat technologique en Sciences et Technologies de l'Industrie et du Développement Durable, spécialité Systèmes d'Information et Numérique (SIN). Électronique, systèmes embarqués et bases de la programmation.</p>
+            <div class="timeline__skills">
+              <span data-fr="Électronique" data-en="Electronics">Électronique</span>
+              <span data-fr="Systèmes embarqués" data-en="Embedded Systems">Systèmes embarqués</span>
+              <span data-fr="Systèmes numériques" data-en="Digital Systems">Systèmes numériques</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label" data-fr="04 — Projets" data-en="04 — Projects">04 — Projets</div>
+      <h2 class="section-title" data-fr="Travaux<br /><em>Sélectionnés</em>" data-en="Selected<br /><em>Work</em>">Travaux<br /><em>Sélectionnés</em></h2>
+      <div class="projects__grid">
+
+        <article class="project-card project-card--featured" style="justify-content: center; align-items: center; text-align: center; min-height: 250px;">
+          <h3 data-fr="Nouveau projet Java<br /><em>Bientôt disponible</em>" data-en="New Java Project<br /><em>Coming Soon</em>">Nouveau projet Java<br /><em>Bientôt disponible</em></h3>
+          <p data-fr="Un projet d'application complet est en cours de développement et sera publié très prochainement. Restez à l'écoute !" data-en="A complete application project is currently under development and will be published very soon. Stay tuned!">Un projet d'application complet est en cours de développement et sera publié très prochainement. Restez à l'écoute !</p>
+          <div class="project-card__tech" style="justify-content: center;">
+            <span>Java</span><span>POO</span><span>⏳</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__meta">
+            <span class="project-tag">HTML</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3 data-fr="Vitrine du BUT Informatique" data-en="BUT Informatique Showcase">Vitrine du BUT Informatique</h3>
+          <p data-fr="Site web présentant les compétences travaillées en première année de BUT Informatique, conçu pour rendre ce diplôme plus attractif et accessible aux futurs étudiants." data-en="A website presenting the skills developed during the first year of the BUT Computer Science programme, designed to make the degree more accessible and attractive to prospective students.">Site web présentant les compétences travaillées en première année de BUT Informatique, conçu pour rendre ce diplôme plus attractif et accessible aux futurs étudiants.</p>
+          <div class="project-card__tech">
+            <span>HTML</span><span>CSS</span>
+          </div>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">GitHub <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__meta">
+            <span class="project-tag" data-fr="Analyse de données" data-en="Data Analysis">Analyse de données</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3 data-fr="Réseaux sociaux & Résultats scolaires" data-en="Social Media & Academic Performance">Réseaux sociaux & Résultats scolaires</h3>
+          <p data-fr="Analyse d'un jeu de données Kaggle portant sur l'usage des réseaux sociaux par des étudiants du monde entier. L'objectif était de déterminer s'il existe un lien entre les résultats scolaires et l'addiction aux réseaux sociaux." data-en="Data analysis project using a Kaggle dataset on social media usage among students worldwide. The goal was to determine whether a link exists between academic results and social media addiction, examining effects on mental health and personal relationships.">Analyse d'un jeu de données Kaggle portant sur l'usage des réseaux sociaux par des étudiants du monde entier. L'objectif était de déterminer s'il existe un lien entre les résultats scolaires et l'addiction aux réseaux sociaux.</p>
+          <div class="project-card__tech">
+            <span>APEX</span><span>SQL</span><span data-fr="Analyse de données" data-en="Data Analysis">Analyse de données</span><span>Kaggle</span>
+          </div>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">GitHub <span>↗</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section class="languages section" id="languages">
+    <div class="container">
+      <div class="section-label" data-fr="05 — Langues" data-en="05 — Languages">05 — Langues</div>
+      <h2 class="section-title" data-fr="Langues<br /><em>Parlées</em>" data-en="Spoken<br /><em>Languages</em>">Langues<br /><em>Parlées</em></h2>
+      <div class="languages__grid">
+
+        <div class="lang-card">
+          <div class="lang-card__flag">🇫🇷</div>
+          <div class="lang-card__info">
+            <h3 data-fr="Français" data-en="French">Français</h3>
+            <span class="lang-level lang-level--native" data-fr="Natif" data-en="Native">Natif</span>
+          </div>
+          <p class="lang-card__desc" data-fr="Langue maternelle. Maîtrise complète à l'oral et à l'écrit." data-en="Mother tongue. Full professional and academic proficiency.">Langue maternelle. Maîtrise complète à l'oral et à l'écrit.</p>
+          <div class="lang-bar"><div class="lang-bar__fill" style="--w: 100%"></div></div>
+        </div>
+
+        <div class="lang-card">
+          <div class="lang-card__flag">🇬🇧</div>
+          <div class="lang-card__info">
+            <h3 data-fr="Anglais" data-en="English">Anglais</h3>
+            <span class="lang-level lang-level--intermediate">B1 — <span data-fr="Intermédiaire" data-en="Intermediate">Intermédiaire</span></span>
+          </div>
+          <p class="lang-card__desc" data-fr="Capable de comprendre et communiquer sur des sujets familiers. Lecture de documentation technique sans difficulté." data-en="Able to understand and communicate on familiar topics. Reading technical documentation comfortably.">Capable de comprendre et communiquer sur des sujets familiers. Lecture de documentation technique sans difficulté.</p>
+          <div class="lang-bar"><div class="lang-bar__fill" style="--w: 55%"></div></div>
+        </div>
+
+        <div class="lang-card">
+          <div class="lang-card__flag">🇪🇸</div>
+          <div class="lang-card__info">
+            <h3 data-fr="Espagnol" data-en="Spanish">Espagnol</h3>
+            <span class="lang-level lang-level--beginner">A2 — <span data-fr="Débutant" data-en="Elementary">Débutant</span></span>
+          </div>
+          <p class="lang-card__desc" data-fr="Compréhension de base des expressions courantes et phrases simples." data-en="Basic understanding of everyday expressions and simple phrases.">Compréhension de base des expressions courantes et phrases simples.</p>
+          <div class="lang-bar"><div class="lang-bar__fill" style="--w: 25%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section class="hobbies section" id="hobbies">
+    <div class="container">
+      <div class="section-label" data-fr="06 — Hors écran" data-en="06 — Beyond the Screen">06 — Hors écran</div>
+      <h2 class="section-title" data-fr="La vie<br /><em>hors du code</em>" data-en="Life<br /><em>Outside Code</em>">La vie<br /><em>hors du code</em></h2>
+      <div class="hobbies__grid">
+
+        <div class="hobby-card">
+          <div class="hobby-card__icon">🏀</div>
+          <h3>Basketball</h3>
+          <p data-fr="Je joue à la fois dans l'équipe universitaire et au playground près de chez moi. Le basket est un rituel quotidien — l'esprit d'équipe et la compétition me gardent concentré et ancré." data-en="Playing both in the university team and at the local playground nearby. Basketball is a daily ritual — the team spirit and the competition keep me sharp and grounded.">Je joue à la fois dans l'équipe universitaire et au playground près de chez moi. Le basket est un rituel quotidien — l'esprit d'équipe et la compétition me gardent concentré et ancré.</p>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-card__icon">🏋️</div>
+          <h3 data-fr="Musculation" data-en="Weightlifting">Musculation</h3>
+          <p data-fr="À la salle 4 à 5 fois par semaine. L'entraînement est autant une discipline mentale que physique — la constance, la progression et le dépassement de ses limites s'appliquent aussi bien en salle qu'en code." data-en="At the gym 4 to 5 times a week. Training is as much a mental discipline as a physical one — consistency, progress, and pushing limits apply both in the weight room and in code.">À la salle 4 à 5 fois par semaine. L'entraînement est autant une discipline mentale que physique — la constance, la progression et le dépassement de ses limites s'appliquent aussi bien en salle qu'en code.</p>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-card__icon">🎮</div>
+          <h3 data-fr="Gaming & Musique" data-en="Gaming & Music">Gaming & Musique</h3>
+          <p data-fr="Passionné de jeux vidéo, je joue presque toujours avec de la musique. Les deux vont de pair — la musique donne le ton, les jeux aiguisent la concentration et les réflexes." data-en="A passionate gamer who almost always plays with music on. The two go hand in hand — music sets the tone, games sharpen focus and reflexes.">Passionné de jeux vidéo, je joue presque toujours avec de la musique. Les deux vont de pair — la musique donne le ton, les jeux aiguisent la concentration et les réflexes.</p>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-card__icon">✈️</div>
+          <h3 data-fr="Voyages" data-en="Travelling">Voyages</h3>
+          <p data-fr="J'ai la chance d'avoir déjà beaucoup voyagé, et c'est quelque chose que je veux continuer à faire. Découvrir de nouveaux endroits, cultures et perspectives est l'une des meilleures façons de grandir." data-en="Lucky enough to have travelled quite a bit already, and it's something I intend to keep doing. Discovering new places, cultures and perspectives is one of the best ways to grow.">J'ai la chance d'avoir déjà beaucoup voyagé, et c'est quelque chose que je veux continuer à faire. Découvrir de nouveaux endroits, cultures et perspectives est l'une des meilleures façons de grandir.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label" data-fr="07 — Contact" data-en="07 — Contact">07 — Contact</div>
+      <div class="contact__inner">
+        <div class="contact__left">
+          <h2 class="section-title" data-fr="Construisons<br /><em>quelque chose</em><br />ensemble." data-en="Let's build<br /><em>something</em><br />together.">Construisons<br /><em>quelque chose</em><br />ensemble.</h2>
+          <p data-fr="Que ce soit pour un projet, un stage ou simplement discuter tech — ma boîte mail est ouverte." data-en="Whether it's a project, internship, or just a chat about tech — my inbox is open.">Que ce soit pour un projet, un stage ou simplement discuter tech — ma boîte mail est ouverte.</p>
+          <div class="contact__links">
+            <a href="mailto:leomontourcy28@gmail.com" class="contact-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              leomontourcy28@gmail.com
+            </a>
+            <a href="https://github.com/leomontourcy" target="_blank" rel="noopener" class="contact-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              github.com/leomontourcy
+            </a>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm" action="https://formspree.io/f/maqkrpyo" method="POST">
+          <div class="form-group">
+            <label for="name" data-fr="Nom" data-en="Name">Nom</label>
+            <input type="text" id="name" name="name" data-placeholder-fr="Votre nom" data-placeholder-en="Your name" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <label for="email" data-fr="Email" data-en="Email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message" data-fr="Message" data-en="Message">Message</label>
+            <textarea id="message" name="message" rows="5" data-placeholder-fr="Parlez-moi de votre projet..." data-placeholder-en="Tell me about your project..." placeholder="Parlez-moi de votre projet..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" data-fr="Envoyer →" data-en="Send Message →">Envoyer →</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="nav__logo">Léo Montourcy<span>.</span></span>
+        <p class="mono">© 2026 by Léo Montourcy</p>
+        <div class="footer__top">
+          <a href="#home" class="btn btn--ghost btn--sm" data-fr="Haut de page ↑" data-en="Back to top ↑">Haut de page ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
