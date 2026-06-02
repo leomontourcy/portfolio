@@ -55,7 +55,7 @@ body {
   margin-bottom: 2rem;
   color: var(--ink);
 }
-.section-title em { font-style: italic; color: var(--ink-mid); }
+.section-title em { font-style: italic; color: var(--ink); }
 
 /* ── BUTTONS ─────────────────────────────── */
 .btn {
