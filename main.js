@@ -4,21 +4,25 @@
 
 // ── Nav scroll effect ────────────────────────
 const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 20);
-});
+if (navbar) {
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  });
+}
 
 // ── Mobile nav toggle ────────────────────────
 const navToggle = document.getElementById('navToggle');
 const navMobile = document.getElementById('navMobile');
 
-navToggle.addEventListener('click', () => {
-  navMobile.classList.toggle('open');
-});
+if (navToggle && navMobile) {
+  navToggle.addEventListener('click', () => {
+    navMobile.classList.toggle('open');
+  });
+}
 
 document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', () => {
-    navMobile.classList.remove('open');
+    if (navMobile) navMobile.classList.remove('open');
   });
 });
 
@@ -26,81 +30,84 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 let currentLang = 'fr';
 
 const langSwitch  = document.getElementById('langSwitch');
-const langFlag    = langSwitch.querySelector('.lang-switch__flag');
-const langLabel   = langSwitch.querySelector('.lang-switch__label');
+if (langSwitch) {
+  const langFlag    = langSwitch.querySelector('.lang-switch__flag');
+  const langLabel   = langSwitch.querySelector('.lang-switch__label');
 
-function applyLang(lang) {
-  currentLang = lang;
-  document.documentElement.lang = lang;
+  function applyLang(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
 
-  // Translate all [data-fr] / [data-en] elements
-  document.querySelectorAll('[data-fr], [data-en]').forEach(el => {
-    const text = el.getAttribute('data-' + lang);
-    if (!text) return;
-    // Use innerHTML so <br /><em> work in section titles etc.
-    if (el.tagName === 'H2' || text.includes('<')) {
-      el.innerHTML = text;
-    } else {
-      el.textContent = text;
+    // Translate all [data-fr] / [data-en] elements
+    document.querySelectorAll('[data-fr], [data-en]').forEach(el => {
+      const text = el.getAttribute('data-' + lang);
+      if (!text) return;
+      if (el.tagName === 'H2' || text.includes('<')) {
+        el.innerHTML = text;
+      } else {
+        el.textContent = text;
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-placeholder-fr], [data-placeholder-en]').forEach(el => {
+      const ph = el.getAttribute('data-placeholder-' + lang);
+      if (ph) el.placeholder = ph;
+    });
+
+    // Update switch button if elements exist
+    if (langFlag && langLabel) {
+      if (lang === 'fr') {
+        langFlag.textContent  = '🇬🇧';
+        langLabel.textContent = 'EN';
+      } else {
+        langFlag.textContent  = '🇫🇷';
+        langLabel.textContent = 'FR';
+      }
+    }
+
+    // Save preference
+    localStorage.setItem('portfolioLang', lang);
+  }
+
+  langSwitch.addEventListener('click', () => {
+    applyLang(currentLang === 'fr' ? 'en' : 'fr');
+  });
+
+  // Load saved preference (default: fr)
+  const savedLang = localStorage.getItem('portfolioLang') || 'fr';
+  applyLang(savedLang);
+}
+
+// ── Theme Switch (Dark/Light Mode) ───────────
+const themeToggle = document.getElementById('themeToggle');
+if (themeToggle) {
+  const themeIcon = themeToggle.querySelector('.theme-toggle__icon');
+
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    document.documentElement.classList.add('dark-mode');
+    if (themeIcon) themeIcon.textContent = '☀️';
+  } else {
+    document.documentElement.classList.remove('dark-mode');
+    if (themeIcon) themeIcon.textContent = '🌙';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark-mode');
+    if (themeIcon) {
+      if (isDark) {
+        themeIcon.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        themeIcon.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+      }
     }
   });
-
-  // ── Theme Switch (Dark/Light Mode) ───────────
-const themeToggle = document.getElementById('themeToggle');
-const themeIcon   = themeToggle.querySelector('.theme-toggle__icon');
-
-// 1. Vérifier s'il y a un choix enregistré ou utiliser la préférence du système
-const savedTheme = localStorage.getItem('theme');
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-  document.documentElement.classList.add('dark-mode');
-  themeIcon.textContent = '☀️';
-} else {
-  document.documentElement.classList.remove('dark-mode');
-  themeIcon.textContent = '🌙';
 }
-
-// 2. Écouter le clic sur le bouton
-themeToggle.addEventListener('click', () => {
-  const isDark = document.documentElement.classList.toggle('dark-mode');
-  
-  // Mettre à jour l'icône et le localStorage
-  if (isDark) {
-    themeIcon.textContent = '☀️';
-    localStorage.setItem('theme', 'dark');
-  } else {
-    themeIcon.textContent = '🌙';
-    localStorage.setItem('theme', 'light');
-  }
-});
-
-  // Translate placeholders
-  document.querySelectorAll('[data-placeholder-fr], [data-placeholder-en]').forEach(el => {
-    const ph = el.getAttribute('data-placeholder-' + lang);
-    if (ph) el.placeholder = ph;
-  });
-
-  // Update switch button
-  if (lang === 'fr') {
-    langFlag.textContent  = '🇬🇧';
-    langLabel.textContent = 'EN';
-  } else {
-    langFlag.textContent  = '🇫🇷';
-    langLabel.textContent = 'FR';
-  }
-
-  // Save preference
-  localStorage.setItem('portfolioLang', lang);
-}
-
-langSwitch.addEventListener('click', () => {
-  applyLang(currentLang === 'fr' ? 'en' : 'fr');
-});
-
-// Load saved preference (default: fr)
-const savedLang = localStorage.getItem('portfolioLang') || 'fr';
-applyLang(savedLang);
 
 // ── Reveal on scroll ─────────────────────────
 const revealEls = document.querySelectorAll(
@@ -142,59 +149,58 @@ document.querySelectorAll('.skills__grid, .projects__grid, .hobbies__grid, .lang
 });
 
 // ── Contact form ─────────────────────────────
-// ── Contact form ─────────────────────────────
 const contactForm = document.getElementById('contactForm');
 const formNote    = document.getElementById('formNote');
 
-contactForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const btn = contactForm.querySelector('button[type="submit"]');
-  
-  // Changement du bouton pendant l'envoi
-  btn.textContent = currentLang === 'fr' ? 'Envoi en cours…' : 'Sending…';
-  btn.disabled = true;
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = contactForm.querySelector('button[type="submit"]');
+    if (!btn) return;
 
-  // Préparation des données du formulaire
-  const data = new FormData(contactForm);
+    btn.textContent = currentLang === 'fr' ? 'Envoi en cours…' : 'Sending…';
+    btn.disabled = true;
 
-  try {
-    // Envoi réel des données à Formspree
-    const response = await fetch(contactForm.action, {
-      method: contactForm.method,
-      body: data,
-      headers: {
-        'Accept': 'application/json'
+    const data = new FormData(contactForm);
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        btn.textContent = currentLang === 'fr' ? 'Message envoyé ✓' : 'Message Sent ✓';
+        if (formNote) {
+          formNote.style.color = '#5cb85c';
+          formNote.textContent = currentLang === 'fr'
+            ? 'Merci ! Je vous répondrai très vite.'
+            : 'Thanks! I\'ll get back to you soon.';
+        }
+        contactForm.reset();
+      } else {
+        throw new Error('Erreur Formspree');
       }
-    });
-
-    if (response.ok) {
-      // Si l'envoi réussit
-      btn.textContent = currentLang === 'fr' ? 'Message envoyé ✓' : 'Message Sent ✓';
-      formNote.style.color = '#5cb85c'; // Vert
-      formNote.textContent = currentLang === 'fr'
-        ? 'Merci ! Je vous répondrai très vite.'
-        : 'Thanks! I\'ll get back to you soon.';
-      contactForm.reset();
-    } else {
-      // Si Formspree renvoie une erreur
-      throw new Error('Erreur Formspree');
+    } catch (error) {
+      btn.textContent = currentLang === 'fr' ? 'Erreur ✕' : 'Error ✕';
+      if (formNote) {
+        formNote.style.color = '#ff4a4a';
+        formNote.textContent = currentLang === 'fr'
+          ? 'Oups ! Un problème est survenu lors de l\'envoi.'
+          : 'Oops! Something went wrong while sending.';
+      }
     }
-  } catch (error) {
-    // Si la requête échoue (ex: pas d'internet)
-    btn.textContent = currentLang === 'fr' ? 'Erreur ✕' : 'Error ✕';
-    formNote.style.color = '#ff4a4a'; // Rouge
-    formNote.textContent = currentLang === 'fr'
-      ? 'Oups ! Un problème est survenu lors de l\'envoi.'
-      : 'Oops! Something went wrong while sending.';
-  }
 
-  // Remise à zéro du bouton après 4 secondes
-  setTimeout(() => {
-    btn.textContent = currentLang === 'fr' ? 'Envoyer →' : 'Send Message →';
-    btn.disabled = false;
-    formNote.textContent = '';
-  }, 4000);
-});
+    setTimeout(() => {
+      btn.textContent = currentLang === 'fr' ? 'Envoyer →' : 'Send Message →';
+      btn.disabled = false;
+      if (formNote) formNote.textContent = '';
+    }, 4000);
+  });
+}
 
 // ── Active nav link on scroll ─────────────────
 const sections = document.querySelectorAll('section[id]');
