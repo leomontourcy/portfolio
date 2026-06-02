@@ -233,7 +233,7 @@ body {
 }
 .hero__title em {
   font-style: italic;
-  color: var(--ink-mid);
+  color: var(--ink);
 }
 .hero__sub {
   font-size: 1.1rem;
