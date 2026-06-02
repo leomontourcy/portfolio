@@ -231,10 +231,6 @@ body {
   margin-bottom: 2rem;
   animation: fadeUp 0.7s 0.1s ease both;
 }
-.hero__title em {
-  font-style: italic;
-  color: var(--ink);
-}
 .hero__sub {
   font-size: 1.1rem;
   color: var(--ink-mid);
