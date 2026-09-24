@@ -538,6 +538,25 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  position: relative;
+  overflow: hidden;
+}
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    800px circle at var(--mouse-x, -500px) var(--mouse-y, -500px), 
+    rgba(0, 0, 0, 0.04),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+.project-card:hover::before {
+  opacity: 1;
 }
 .project-card:hover {
   border-color: var(--ink);
@@ -545,7 +564,6 @@ body {
   transform: translate(-2px, -2px);
 }
 .project-card--featured {
-  grid-column: span 2;
   background: var(--ink);
   color: var(--bg);
   border-color: var(--ink);
@@ -801,9 +819,10 @@ body {
 
 /* ── FOOTER ──────────────────────────────── */
 .footer {
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--bg-2);
+  color: var(--ink);
   padding: 2.5rem 0;
+  border-top: 1px solid var(--border);
 }
 .footer__inner {
   display: flex;
@@ -812,10 +831,10 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.footer .nav__logo { color: var(--bg); }
-.footer .mono { color: rgba(250,250,248,0.4); font-size: 0.75rem; }
-.footer .btn--ghost { color: var(--bg); border-color: rgba(255,255,255,0.2); font-size: 0.78rem; }
-.footer .btn--ghost:hover { border-color: var(--bg); }
+.footer .nav__logo { color: var(--ink); }
+.footer .mono { color: var(--ink-soft); font-size: 0.75rem; }
+.footer .btn--ghost { color: var(--ink); border-color: var(--border); font-size: 0.78rem; }
+.footer .btn--ghost:hover { border-color: var(--ink); }
 
 /* ── ANIMATIONS ───────────────────────────── */
 @keyframes fadeUp {
@@ -911,21 +930,19 @@ html.dark-mode textarea {
 }
 
 html.dark-mode .project-card--featured {
-  background: var(--bg-2);
+  background: #000000;
   color: var(--ink);
-  border-color: var(--border);
+  border-color: #333333;
+}
+
+html.dark-mode .project-card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x, -500px) var(--mouse-y, -500px), 
+    rgba(255, 255, 255, 0.06),
+    transparent 40%
+  );
 }
 
 html.dark-mode .project-card--featured p {
   color: var(--ink-mid);
-}
-
-html.dark-mode .footer {
-  background: var(--bg-2);
-  color: var(--ink);
-  border-top: 1px solid var(--border);
-}
-
-html.dark-mode .footer .nav__logo {
-  color: var(--ink);
 }
