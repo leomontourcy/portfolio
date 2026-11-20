@@ -564,7 +564,6 @@ body {
   transform: translate(-2px, -2px);
 }
 .project-card--featured {
-  grid-column: span 2;
   background: var(--ink);
   color: var(--bg);
   border-color: var(--ink);
