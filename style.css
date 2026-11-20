@@ -947,3 +947,7 @@ html.dark-mode .project-card::before {
 html.dark-mode .project-card--featured p {
   color: var(--ink-mid);
 }
+
+html.dark-mode .project-card--featured .link-arrow {
+  color: var(--ink);
+}
