@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Léo Montourcy — Portfolio</title>
   <meta name="description" content="Portfolio de Léo Montourcy, étudiant en BUT Informatique à Toulouse." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Léo Montourcy — Portfolio" />
+  <meta property="og:description" content="Étudiant en BUT Informatique à Toulouse : projets, compétences et parcours." />
+  <meta property="og:url" content="https://leomontourcy.github.io/portfolio/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -31,16 +35,16 @@
       </ul>
 
       <div class="nav__actions" style="display: flex; align-items: center; gap: 0.5rem;">
-        <button class="lang-switch" id="langSwitch" title="Switch language">
+        <button class="lang-switch" id="langSwitch" title="Switch language / Changer de langue" aria-label="Switch language / Changer de langue">
           <span class="lang-switch__label" data-fr="EN" data-en="FR">EN</span>
         </button>
 
         <button id="themeToggle" class="theme-toggle" aria-label="Changer de thème" title="Changer de thème">
-          <span class="theme-toggle__icon">🌜</span>
+          <span class="theme-toggle__icon">🌙</span>
         </button>
       </div>
 
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -63,9 +67,9 @@
     <h1 class="hero__title">
       Montourcy<br />Léo
     </h1>
-    <p class="hero__sub" data-fr="Étudiant en BUT Informatique, Déploiement d'Appli Communicantes & Sécurisées"
-      data-en="As a Computer Science student, Deployment of Connected & Secure Apps">
-      Étudiant en BUT Informatique, Déploiement d'Appli Communicantes & Sécurisées
+    <p class="hero__sub" data-fr="Étudiant en BUT Informatique — parcours Déploiement d'Applications Communicantes et Sécurisées"
+      data-en="Computer Science student — Deployment of Connected and Secure Applications track">
+      Étudiant en BUT Informatique — parcours Déploiement d'Applications Communicantes et Sécurisées
     </p>
     <div class="hero__cta">
       <a href="#projects" class="btn btn--primary" data-fr="Voir mes projets" data-en="View Projects">Voir mes
@@ -95,14 +99,13 @@
           <h2 class="section-title" data-fr="Construire avec<br /><em>intention.</em>"
             data-en="Building with<br /><em>intention.</em>">Construire avec<br /><em>intention.</em></h2>
           <p data-fr="Je suis étudiant en BUT Informatique, spécialité Déploiement d'Applications Communicantes & Sécurisées."
-            data-en="I am a Computer Science student at BUT Informatique, specializing in the Deployment of Connected & Secure Apps.">Je suis
+            data-en="I am a Computer Science student (BUT Informatique), specializing in the deployment of connected and secure applications.">Je suis
             étudiant en BUT Informatique, spécialité Déploiement d'Applications Communicantes & Sécurisées.</p>
-          <p data-fr="Mes compétences couvrent Java, Ada, Kotlin, HTML, le développement Low-Code, les réseaux et les bases de données, avec un intérêt particulier pour le développement d'applications et la gestion de données."
-            data-en="My skills encompass Java, Ada, Kotlin, HTML, Low-Code Development, networks, and database systems, with a particular interest in application development and database management.">
-            Mes compétences couvrent Java, Ada, Kotlin, HTML, le développement Low-Code, les réseaux et les bases de
-            données, avec un intérêt particulier pour le développement d'applications et la gestion de données.</p>
+          <p data-fr="Mes compétences couvrent Java, Kotlin, Python, Ada, le développement web (HTML, CSS, JavaScript, PHP), le Low-Code, les réseaux et les bases de données, avec un intérêt particulier pour le développement d'applications et la gestion de données."
+            data-en="My skills cover Java, Kotlin, Python, Ada, web development (HTML, CSS, JavaScript, PHP), Low-Code development, networking and databases, with a particular interest in application development and data management.">
+            Mes compétences couvrent Java, Kotlin, Python, Ada, le développement web (HTML, CSS, JavaScript, PHP), le Low-Code, les réseaux et les bases de données, avec un intérêt particulier pour le développement d'applications et la gestion de données.</p>
           <p data-fr="Je suis actuellement à la recherche d'un stage au sein d'équipes expérimentées pour contribuer, apprendre et progresser."
-            data-en="I am currently seeking an internship within experienced teams to contribute, learn, and grow.">Je
+            data-en="I am currently looking for an internship in an experienced team where I can contribute, learn and grow.">Je
             suis actuellement à la recherche d'un stage au sein d'équipes expérimentées pour contribuer, apprendre et
             progresser.</p>
           <div class="about__meta">
@@ -154,14 +157,14 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
           </div>
           <h3 data-fr="Programmation" data-en="Programming">Programmation</h3>
-          <p class="skill-card__desc" data-fr="Java, Kotlin, Ada, HTML, PHP, CSS, C++, SQL"
-            data-en="Java, Kotlin, Ada, HTML, PHP, CSS, C++, SQL">Java, Kotlin, Ada, HTML, PHP, CSS, C++, SQL</p>
+          <p class="skill-card__desc" data-fr="Java, Kotlin, Python, C++, Ada, SQL — Web : HTML, CSS, JavaScript, PHP"
+            data-en="Java, Kotlin, Python, C++, Ada, SQL — Web: HTML, CSS, JavaScript, PHP">Java, Kotlin, Python, C++, Ada, SQL — Web : HTML, CSS, JavaScript, PHP</p>
         </div>
         <div class="skill-card">
           <div class="skill-card__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
           </div>
-          <h3>Low-Code Development</h3>
+          <h3 data-fr="Développement Low-Code" data-en="Low-Code Development">Développement Low-Code</h3>
           <p class="skill-card__desc" data-fr="Conception d'Applications / Logique de Workflow"
             data-en="Application Design / Workflow Logic">Conception d'Applications / Logique de Workflow</p>
         </div>
@@ -170,8 +173,8 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
           </div>
           <h3 data-fr="Bases de données" data-en="Databases">Bases de données</h3>
-          <p class="skill-card__desc" data-fr="Gestion des Données / Exploitation SQL"
-            data-en="Data Management / SQL Exploitation">Gestion des Données / Exploitation SQL</p>
+          <p class="skill-card__desc" data-fr="Modélisation / Requêtes SQL / Oracle APEX"
+            data-en="Data Modeling / SQL Queries / Oracle APEX">Modélisation / Requêtes SQL / Oracle APEX</p>
         </div>
         <div class="skill-card">
           <div class="skill-card__icon">
@@ -194,14 +197,14 @@
 
         <div class="timeline__item timeline__item--current">
           <div class="timeline__dot"></div>
-          <div class="timeline__year"><span data-fr="Présent" data-en="Present">Présent</span><br />— 2024</div>
+          <div class="timeline__year">2024 —<br /><span data-fr="Présent" data-en="Present">Présent</span></div>
           <div class="timeline__card">
             <div class="timeline__tag" data-fr="Enseignement Supérieur" data-en="Higher Education">Enseignement
               Supérieur</div>
             <h3 data-fr="BUT Informatique" data-en="BUT Computer Science">BUT Informatique</h3>
             <p class="timeline__place">IUT Paul Sabatier — Toulouse</p>
             <p data-fr="Bachelor Universitaire de Technologie en Informatique. Couvrant le développement logiciel, les bases de données, les réseaux et la conception d'applications sur un cursus de 3 ans."
-              data-en="Bachelor's University of Technology in Computer Science. Covering software development, databases, networking, and application design across a 3-year curriculum.">
+              data-en="Three-year Bachelor of Technology (BUT) in Computer Science, covering software development, databases, networking and application design.">
               Bachelor Universitaire de Technologie en Informatique. Couvrant le développement logiciel, les bases de
               données, les réseaux et la conception d'applications sur un cursus de 3 ans.</p>
             <div class="timeline__skills">
@@ -220,7 +223,7 @@
             <h3>Baccalauréat STI2D — Option SIN</h3>
             <p class="timeline__place">Lycée Cabanis — Brive-la-Gaillarde (19100)</p>
             <p data-fr="Baccalauréat technologique en Sciences et Technologies de l'Industrie et du Développement Durable, spécialité Systèmes d'Information et Numérique (SIN). Électronique, systèmes embarqués et bases de la programmation."
-              data-en="Technological baccalaureate in Industrial Technology and Sustainable Development, specialising in Digital and Computer Systems (SIN). Focus on electronics, embedded systems, and programming fundamentals.">
+              data-en="Technological baccalaureate in Industrial Technology and Sustainable Development, specializing in Digital Information Systems (SIN). Focus on electronics, embedded systems and programming fundamentals.">
               Baccalauréat technologique en Sciences et Technologies de l'Industrie et du Développement Durable,
               spécialité Systèmes d'Information et Numérique (SIN). Électronique, systèmes embarqués et bases de la
               programmation.</p>
@@ -243,17 +246,38 @@
         Travaux<br /><em>Sélectionnés</em></h2>
       <div class="projects__grid">
 
+        <article class="project-card project-card--featured">
+          <div class="project-card__meta">
+            <span class="project-tag" data-fr="Application Web / IA" data-en="Web App / AI">Application Web / IA</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>LEOai — <span data-fr="Montage vidéo automatique" data-en="Automatic Video Editing">Montage vidéo automatique</span></h3>
+          <p data-fr="Application web qui transforme des vidéos et des photos en un montage rythmé, synchronisé sur la musique : détection du tempo et des beats avec librosa, choix des plans les plus nets avec OpenCV, rendu avec MoviePy et suivi en temps réel via Socket.IO. Comptes sécurisés par double authentification (TOTP), protection CSRF, contrôle d'accès par utilisateur et déploiement Docker."
+            data-en="Web application that turns videos and photos into a rhythmic edit synced to the music: tempo and beat detection with librosa, sharpest-shot selection with OpenCV, rendering with MoviePy and real-time progress via Socket.IO. Accounts secured with two-factor authentication (TOTP), CSRF protection, per-user access control and Docker deployment.">
+            Application web qui transforme des vidéos et des photos en un montage rythmé, synchronisé sur la musique : détection du tempo et des beats avec librosa, choix des plans les plus nets avec OpenCV, rendu avec MoviePy et suivi en temps réel via Socket.IO. Comptes sécurisés par double authentification (TOTP), protection CSRF, contrôle d'accès par utilisateur et déploiement Docker.</p>
+          <div class="project-card__tech">
+            <span>Python</span><span>Flask</span><span>OpenCV</span><span>librosa</span><span>Socket.IO</span><span>Docker</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/leomontourcy/mon_ia" target="_blank" rel="noopener" class="link-arrow">GitHub <span>↗</span></a>
+          </div>
+        </article>
+
         <article class="project-card">
           <div class="project-card__meta">
             <span class="project-tag" data-fr="Développement Web" data-en="Web Development">Développement Web</span>
             <span class="project-year">2026</span>
           </div>
           <h3 data-fr="Carnet de Voyages" data-en="Travel Journal">Carnet de Voyages</h3>
-          <p data-fr="Un site web personnel conçu pour documenter et présenter de manière interactive l'ensemble de mes voyages à travers le monde."
-            data-en="A personal website designed to interactively document and showcase all my travels around the world.">
-            Un site web personnel conçu pour documenter et présenter de manière interactive l'ensemble de mes voyages à travers le monde.</p>
+          <p data-fr="Un site web personnel conçu pour documenter et présenter de manière interactive l'ensemble de mes voyages : carte du monde interactive (Leaflet), albums photo et vidéo par ville, aperçus au survol."
+            data-en="A personal website to document and showcase my travels: an interactive world map (Leaflet), photo and video albums for each city, and hover previews.">
+            Un site web personnel conçu pour documenter et présenter de manière interactive l'ensemble de mes voyages : carte du monde interactive (Leaflet), albums photo et vidéo par ville, aperçus au survol.</p>
           <div class="project-card__tech">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Leaflet</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://leomontourcy.github.io/Site-De-Mon-Carnet-De-Voyage/" target="_blank" rel="noopener" class="link-arrow"><span data-fr="Voir le site" data-en="Live site">Voir le site</span> <span>↗</span></a>
+            <a href="https://github.com/leomontourcy/Site-De-Mon-Carnet-De-Voyage" target="_blank" rel="noopener" class="link-arrow">GitHub <span>↗</span></a>
           </div>
         </article>
 
@@ -283,24 +307,20 @@
           <div class="project-card__tech">
             <span>SQL</span><span>Oracle APEX</span><span>Modélisation</span>
           </div>
-          <div class="project-card__links">
-            <a href="https://github.com/leomontourcy/oracle-apex-projet" class="link-arrow">GitHub <span>↗</span></a>
-          </div>
         </article>
 
-        <article class="project-card project-card--featured">
+        <article class="project-card">
           <div class="project-card__meta">
             <span class="project-tag" data-fr="En cours" data-en="Work in Progress">En cours</span>
             <span class="project-year">Jan. 2027</span>
           </div>
           <h3 data-fr="Nouveau projet web/logiciel"
             data-en="New web/software project">Nouveau projet web/logiciel</h3>
-          <p data-fr="Un projet complet est actuellement en cours de développement. Il sera finalisé et publié d'ici janvier. Restez à l'écoute !"
-            data-en="A complete project is currently under development. It will be finalized and published by January. Stay tuned!">
-            Un projet complet est actuellement en cours de développement. Il sera finalisé et publié d'ici janvier. Restez à
-            l'écoute !</p>
+          <p data-fr="Un nouveau projet complet est en cours de développement. Il sera finalisé et publié d'ici janvier 2027."
+            data-en="A new full-scale project is currently under development. It will be completed and published by January 2027.">
+            Un nouveau projet complet est en cours de développement. Il sera finalisé et publié d'ici janvier 2027.</p>
           <div class="project-card__tech">
-            <span>En développement</span><span>⏳</span>
+            <span data-fr="En développement" data-en="In progress">En développement</span><span>⏳</span>
           </div>
         </article>
 
@@ -338,7 +358,7 @@
           </div>
           <p class="lang-card__desc"
             data-fr="Capable de comprendre et communiquer sur des sujets familiers. Lecture de documentation technique sans difficulté."
-            data-en="Able to understand and communicate on familiar topics. Reading technical documentation comfortably.">
+            data-en="Able to understand and communicate on familiar topics. Comfortable reading technical documentation.">
             Capable de comprendre et communiquer sur des sujets familiers. Lecture de documentation technique sans
             difficulté.</p>
           <div class="lang-bar">
@@ -350,8 +370,8 @@
           <div class="lang-card__flag">🇪🇸</div>
           <div class="lang-card__info">
             <h3 data-fr="Espagnol" data-en="Spanish">Espagnol</h3>
-            <span class="lang-level lang-level--beginner">A2 — <span data-fr="Débutant"
-                data-en="Elementary">Débutant</span></span>
+            <span class="lang-level lang-level--beginner">A2 — <span data-fr="Élémentaire"
+                data-en="Elementary">Élémentaire</span></span>
           </div>
           <p class="lang-card__desc" data-fr="Compréhension de base des expressions courantes et phrases simples."
             data-en="Basic understanding of everyday expressions and simple phrases.">Compréhension de base des
@@ -462,7 +482,8 @@
           </div>
           <div class="form-group">
             <label for="email" data-fr="Email" data-en="Email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            <input type="email" id="email" name="email" data-placeholder-fr="votre@email.com" data-placeholder-en="your@email.com"
+              placeholder="votre@email.com" required />
           </div>
           <div class="form-group">
             <label for="message" data-fr="Message" data-en="Message">Message</label>
@@ -482,7 +503,7 @@
     <div class="container">
       <div class="footer__inner">
         <span class="nav__logo">Léo Montourcy</span>
-        <p class="mono">© 2026 by Léo Montourcy</p>
+        <p class="mono">© 2026 Léo Montourcy</p>
         <div class="footer__top">
           <a href="#home" class="btn btn--ghost btn--sm" data-fr="Haut de page ↑" data-en="Back to top ↑">Haut de page
             ↑</a>

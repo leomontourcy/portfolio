@@ -77,7 +77,6 @@ if (langSwitch) {
 // ── Theme Switch (Dark/Light Mode) ───────────
 const themeToggle = document.getElementById('themeToggle');
 if (themeToggle) {
-  // CORRECTION ICI : On cherche l'élément par son ID ou directement l'icône interne de manière sécurisée
   const themeIcon = themeToggle.querySelector('.theme-toggle__icon') || themeToggle;
 
   const savedTheme = localStorage.getItem('theme');

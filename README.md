@@ -1,24 +1,46 @@
 # Portfolio — Léo Montourcy
 
-Bienvenue sur le dépôt de mon portfolio personnel. Ce site a été conçu pour présenter mon parcours en **BUT Informatique** à l'IUT Paul Sabatier de Toulouse, mes compétences techniques, ainsi que mes projets de développement.
+Portfolio personnel présentant mon parcours en **BUT Informatique** à l'IUT Paul Sabatier (Toulouse), mes compétences et mes projets.
 
-🔗 **Version en ligne : https://leomontourcy.github.io/portfolio/
+🔗 **Site en ligne : [leomontourcy.github.io/portfolio](https://leomontourcy.github.io/portfolio/)**
 
-## ✨ Fonctionnalités
-* **Design Éditorial Minimaliste :** Une interface épurée axée sur la lisibilité et la typographie.
-* **Multilingue (Français / Anglais) :** Gestion dynamique de la langue en JavaScript natif via des attributs de données (`data-fr`, `data-en`) sans rechargement de page.
-* **Animations Fluides :** Intégration de l'API *Intersection Observer* pour révéler les éléments au défilement et animer les barres de progression.
-* **Formulaire de Contact Actif :** Formulaire de contact fonctionnel connecté de manière asynchrone (AJAX/Fetch) via Formspree.
+## Fonctionnalités
 
-## 🛠️ Technologies utilisées
-* **HTML5** (Structure sémantique)
-* **CSS3** (Variables CSS, Flexbox, Grid, Animations)
-* **JavaScript** (ES6+, API Fetch, LocalStorage pour sauvegarder la préférence de langue)
+- **Bilingue français / anglais** : changement de langue instantané en JavaScript natif, via des attributs `data-fr` / `data-en`, sans rechargement de page. Le choix est mémorisé (`localStorage`).
+- **Thème clair / sombre** : respecte la préférence du système (`prefers-color-scheme`) et mémorise le choix de l'utilisateur.
+- **Animations au défilement** avec l'API `IntersectionObserver` (apparition des sections, barres de niveau de langue, lien actif dans le menu).
+- **Formulaire de contact fonctionnel**, envoyé en asynchrone (`fetch`) via [Formspree](https://formspree.io/), avec retour visuel de succès ou d'erreur.
+- **Responsive** : mise en page adaptée au mobile, avec un menu dédié.
 
-## 📂 Structure du projet
-* `index.html` : Structure et contenu textuel (FR/EN).
-* `css/style.css` : Design, thémisation et gestion du responsive.
-* `js/main.js` : Logique de l'application (changement de langue, animations au scroll, gestion du formulaire).
+## Technologies
+
+- **HTML5** : structure sémantique, balises Open Graph
+- **CSS3** : variables CSS, Grid, Flexbox, animations
+- **JavaScript (ES6+)** : sans framework ni dépendance
+
+## Structure
+
+```
+├── index.html    # Contenu de la page (FR/EN)
+├── style.css     # Mise en page, thèmes clair/sombre, responsive
+├── main.js       # Langue, thème, animations, formulaire
+├── cv.pdf        # CV téléchargeable
+└── photo/        # Photo de profil
+```
+
+## Lancer en local
+
+Aucune installation n'est nécessaire : il suffit d'ouvrir `index.html` dans un navigateur, ou de lancer un petit serveur local :
+
+```bash
+python3 -m http.server 8000
+# puis ouvrir http://localhost:8000
+```
+
+## Déploiement
+
+Le site est hébergé avec **GitHub Pages** depuis la branche `main`.
 
 ---
-*Développé avec ☕ et 💻 par Léo Montourcy.*
+
+[LinkedIn](https://www.linkedin.com/in/l%C3%A9o-montourcy-5b7381437/) · [GitHub](https://github.com/leomontourcy)
