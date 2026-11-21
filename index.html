@@ -15,7 +15,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=6" />
+  <link rel="stylesheet" href="style.css?v=7" />
 </head>
 
 <body>
@@ -26,9 +26,9 @@
 
       <ul class="nav__links">
         <li><a href="#about" data-fr="À propos" data-en="About">À propos</a></li>
+        <li><a href="#projects" data-fr="Projets" data-en="Projects">Projets</a></li>
         <li><a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a></li>
         <li><a href="#education" data-fr="Parcours" data-en="Education">Parcours</a></li>
-        <li><a href="#projects" data-fr="Projets" data-en="Projects">Projets</a></li>
         <li><a href="#languages" data-fr="Langues" data-en="Languages">Langues</a></li>
         <li><a href="#hobbies" data-fr="Loisirs" data-en="Hobbies">Loisirs</a></li>
         <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
@@ -51,9 +51,9 @@
 
     <ul class="nav__mobile" id="navMobile">
       <li><a href="#about" class="mobile-link" data-fr="À propos" data-en="About">À propos</a></li>
+      <li><a href="#projects" class="mobile-link" data-fr="Projets" data-en="Projects">Projets</a></li>
       <li><a href="#skills" class="mobile-link" data-fr="Compétences" data-en="Skills">Compétences</a></li>
       <li><a href="#education" class="mobile-link" data-fr="Parcours" data-en="Education">Parcours</a></li>
-      <li><a href="#projects" class="mobile-link" data-fr="Projets" data-en="Projects">Projets</a></li>
       <li><a href="#languages" class="mobile-link" data-fr="Langues" data-en="Languages">Langues</a></li>
       <li><a href="#hobbies" class="mobile-link" data-fr="Loisirs" data-en="Hobbies">Loisirs</a></li>
       <li><a href="#contact" class="mobile-link" data-fr="Contact" data-en="Contact">Contact</a></li>
@@ -140,117 +140,34 @@
     </div>
   </section>
 
-  <section class="skills section" id="skills">
-    <div class="container">
-      <div class="section-label" data-fr="02 — Compétences" data-en="02 — Skills">02 — Compétences</div>
-      <h2 class="section-title" data-fr="Compétences<br /><em>techniques</em>" data-en="Technical<br /><em>Expertise</em>">
-        Compétences<br /><em>techniques</em></h2>
-      <div class="skills__grid skills__grid--wide">
-        <div class="skill-card">
-          <div class="skill-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-          </div>
-          <h3 data-fr="Programmation" data-en="Programming">Programmation</h3>
-          <p class="skill-card__desc" data-fr="Java, Kotlin, Python, C++, Ada, SQL — Web : HTML, CSS, JavaScript, PHP"
-            data-en="Java, Kotlin, Python, C++, Ada, SQL — Web: HTML, CSS, JavaScript, PHP">Java, Kotlin, Python, C++, Ada, SQL — Web : HTML, CSS, JavaScript, PHP</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-          </div>
-          <h3 data-fr="Développement low-code" data-en="Low-Code Development">Développement low-code</h3>
-          <p class="skill-card__desc" data-fr="Conception d'applications et de workflows"
-            data-en="Application Design / Workflow Logic">Conception d'applications et de workflows</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-          </div>
-          <h3 data-fr="Bases de données" data-en="Databases">Bases de données</h3>
-          <p class="skill-card__desc" data-fr="Modélisation, requêtes SQL, Oracle APEX"
-            data-en="Data Modeling / SQL Queries / Oracle APEX">Modélisation, requêtes SQL, Oracle APEX</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="14" width="6" height="6" rx="1"></rect><rect x="4" y="4" width="6" height="6" rx="1"></rect><path d="M10 7h4"></path><path d="M17 14v-3a2 2 0 0 0-2-2h-3"></path></svg>
-          </div>
-          <h3 data-fr="Réseaux" data-en="Networking">Réseaux</h3>
-          <p class="skill-card__desc" data-fr="Systèmes et fondamentaux des réseaux" data-en="Systems / Network Fundamentals">
-            Systèmes et fondamentaux des réseaux</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="education section" id="education">
-    <div class="container">
-      <div class="section-label" data-fr="03 — Parcours" data-en="03 — Education">03 — Parcours</div>
-      <h2 class="section-title" data-fr="Mon<br /><em>Parcours</em>" data-en="My<br /><em>Background</em>">
-        Mon<br /><em>Parcours</em></h2>
-      <div class="timeline">
-
-        <div class="timeline__item timeline__item--current">
-          <div class="timeline__dot"></div>
-          <div class="timeline__year">2024 —<br /><span data-fr="Présent" data-en="Present">Présent</span></div>
-          <div class="timeline__card">
-            <div class="timeline__tag" data-fr="Enseignement supérieur" data-en="Higher Education">Enseignement supérieur</div>
-            <h3 data-fr="BUT Informatique" data-en="BUT Computer Science">BUT Informatique</h3>
-            <p class="timeline__place">IUT Paul Sabatier — Toulouse</p>
-            <p data-fr="Bachelor universitaire de technologie en informatique, en trois ans : développement logiciel, bases de données, réseaux et conception d'applications."
-              data-en="Three-year Bachelor of Technology (BUT) in Computer Science, covering software development, databases, networking and application design.">
-              Bachelor universitaire de technologie en informatique, en trois ans : développement logiciel, bases de données, réseaux et conception d'applications.</p>
-            <div class="timeline__skills">
-              <span>Java</span><span>Kotlin</span><span>Ada</span><span>SQL</span><span data-fr="Réseaux"
-                data-en="Networking">Réseaux</span><span>Low-Code</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline__item">
-          <div class="timeline__dot"></div>
-          <div class="timeline__year">2024</div>
-          <div class="timeline__card">
-            <div class="timeline__tag" data-fr="Enseignement secondaire" data-en="Secondary Education">Enseignement secondaire</div>
-            <h3>Baccalauréat STI2D — spécialité SIN</h3>
-            <p class="timeline__place">Lycée Cabanis — Brive-la-Gaillarde (19100)</p>
-            <p data-fr="Baccalauréat technologique en Sciences et Technologies de l'Industrie et du Développement Durable, spécialité Systèmes d'Information et Numérique (SIN). Au programme : électronique, systèmes embarqués et bases de la programmation."
-              data-en="Technological baccalaureate in Industrial Technology and Sustainable Development, specializing in Digital Information Systems (SIN). Focus on electronics, embedded systems and programming fundamentals.">
-              Baccalauréat technologique en Sciences et Technologies de l'Industrie et du Développement Durable,
-              spécialité Systèmes d'Information et Numérique (SIN). Au programme : électronique, systèmes embarqués et bases de la programmation.</p>
-            <div class="timeline__skills">
-              <span data-fr="Électronique" data-en="Electronics">Électronique</span>
-              <span data-fr="Systèmes embarqués" data-en="Embedded Systems">Systèmes embarqués</span>
-              <span data-fr="Systèmes numériques" data-en="Digital Systems">Systèmes numériques</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <section class="projects section" id="projects">
     <div class="container">
-      <div class="section-label" data-fr="04 — Projets" data-en="04 — Projects">04 — Projets</div>
+      <div class="section-label" data-fr="02 — Projets" data-en="02 — Projects">02 — Projets</div>
       <h2 class="section-title" data-fr="Projets<br /><em>réalisés</em>" data-en="Selected<br /><em>Work</em>">
         Projets<br /><em>réalisés</em></h2>
       <div class="projects__grid">
 
         <article class="project-card project-card--featured">
-          <div class="project-card__meta">
-            <span class="project-tag" data-fr="Développement web" data-en="Web Development">Développement web</span>
-            <span class="project-year">2026</span>
-          </div>
-          <h3 data-fr="Carnet de voyage" data-en="Travel Journal">Carnet de voyage</h3>
-          <p data-fr="Un site web personnel conçu pour documenter et présenter de manière interactive l'ensemble de mes voyages : carte du monde interactive (Leaflet), albums photo et vidéo par ville, aperçus au survol."
-            data-en="A personal website to document and showcase my travels: an interactive world map (Leaflet), photo and video albums for each city, and hover previews.">
-            Un site web personnel conçu pour documenter et présenter de manière interactive l'ensemble de mes voyages : carte du monde interactive (Leaflet), albums photo et vidéo par ville, aperçus au survol.</p>
-          <div class="project-card__tech">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Leaflet</span>
-          </div>
-          <div class="project-card__links">
-            <a href="https://leomontourcy.github.io/Site-De-Mon-Carnet-De-Voyage/" target="_blank" rel="noopener" class="link-arrow"><span data-fr="Voir le site" data-en="Live site">Voir le site</span> <span>↗</span></a>
-            <a href="https://github.com/leomontourcy/Site-De-Mon-Carnet-De-Voyage" target="_blank" rel="noopener" class="link-arrow">GitHub <span>↗</span></a>
+          <a class="project-card__media" href="https://leomontourcy.github.io/Site-De-Mon-Carnet-De-Voyage/" target="_blank" rel="noopener">
+            <img src="photo/carnet-apercu.jpg" width="876" height="553" loading="lazy"
+              alt="Aperçu du site Carnet de voyage : statistiques et carte du monde interactive" />
+          </a>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-tag" data-fr="Développement web" data-en="Web Development">Développement web</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3 data-fr="Carnet de voyage" data-en="Travel Journal">Carnet de voyage</h3>
+            <p data-fr="Un site web personnel conçu pour documenter et présenter de manière interactive l'ensemble de mes voyages : carte du monde interactive (Leaflet), albums photo et vidéo par ville, aperçus au survol."
+              data-en="A personal website to document and showcase my travels: an interactive world map (Leaflet), photo and video albums for each city, and hover previews.">
+              Un site web personnel conçu pour documenter et présenter de manière interactive l'ensemble de mes voyages : carte du monde interactive (Leaflet), albums photo et vidéo par ville, aperçus au survol.</p>
+            <div class="project-card__tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Leaflet</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://leomontourcy.github.io/Site-De-Mon-Carnet-De-Voyage/" target="_blank" rel="noopener" class="link-arrow"><span data-fr="Voir le site" data-en="Live site">Voir le site</span> <span>↗</span></a>
+              <a href="https://github.com/leomontourcy/Site-De-Mon-Carnet-De-Voyage" target="_blank" rel="noopener" class="link-arrow">GitHub <span>↗</span></a>
+            </div>
           </div>
         </article>
 
@@ -299,6 +216,93 @@
             <span data-fr="En développement" data-en="In progress">En développement</span><span>⏳</span>
           </div>
         </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label" data-fr="03 — Compétences" data-en="03 — Skills">03 — Compétences</div>
+      <h2 class="section-title" data-fr="Compétences<br /><em>techniques</em>" data-en="Technical<br /><em>Expertise</em>">
+        Compétences<br /><em>techniques</em></h2>
+      <div class="skills__list">
+        <div class="skill-row">
+          <h3 data-fr="Langages" data-en="Languages">Langages</h3>
+          <ul class="skill-tags">
+            <li>Java</li><li>Kotlin</li><li>Python</li><li>C++</li><li>Ada</li>
+          </ul>
+        </div>
+        <div class="skill-row">
+          <h3 data-fr="Web" data-en="Web">Web</h3>
+          <ul class="skill-tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>Leaflet</li>
+          </ul>
+        </div>
+        <div class="skill-row">
+          <h3 data-fr="Données" data-en="Data">Données</h3>
+          <ul class="skill-tags">
+            <li>SQL</li><li data-fr="Modélisation" data-en="Data modeling">Modélisation</li><li>Oracle APEX</li>
+          </ul>
+        </div>
+        <div class="skill-row">
+          <h3 data-fr="Réseaux et systèmes" data-en="Networks & systems">Réseaux et systèmes</h3>
+          <ul class="skill-tags">
+            <li data-fr="Fondamentaux réseau" data-en="Networking fundamentals">Fondamentaux réseau</li><li data-fr="Systèmes" data-en="Systems">Systèmes</li>
+          </ul>
+        </div>
+        <div class="skill-row">
+          <h3 data-fr="Outils et méthodes" data-en="Tools & methods">Outils et méthodes</h3>
+          <ul class="skill-tags">
+            <li>Git</li><li>GitHub</li><li>Eclipse</li><li data-fr="Programmation orientée objet" data-en="Object-oriented programming">Programmation orientée objet</li><li>Low-code</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-label" data-fr="04 — Parcours" data-en="04 — Education">04 — Parcours</div>
+      <h2 class="section-title" data-fr="Mon<br /><em>Parcours</em>" data-en="My<br /><em>Background</em>">
+        Mon<br /><em>Parcours</em></h2>
+      <div class="timeline">
+
+        <div class="timeline__item timeline__item--current">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2024 —<br /><span data-fr="Présent" data-en="Present">Présent</span></div>
+          <div class="timeline__card">
+            <div class="timeline__tag" data-fr="Enseignement supérieur" data-en="Higher Education">Enseignement supérieur</div>
+            <h3 data-fr="BUT Informatique" data-en="BUT Computer Science">BUT Informatique</h3>
+            <p class="timeline__place">IUT Paul Sabatier — Toulouse</p>
+            <p data-fr="Bachelor universitaire de technologie en informatique, en trois ans : développement logiciel, bases de données, réseaux et conception d'applications."
+              data-en="Three-year Bachelor of Technology (BUT) in Computer Science, covering software development, databases, networking and application design.">
+              Bachelor universitaire de technologie en informatique, en trois ans : développement logiciel, bases de données, réseaux et conception d'applications.</p>
+            <div class="timeline__skills">
+              <span>Java</span><span>Kotlin</span><span>Ada</span><span>SQL</span><span data-fr="Réseaux"
+                data-en="Networking">Réseaux</span><span>Low-Code</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2024</div>
+          <div class="timeline__card">
+            <div class="timeline__tag" data-fr="Enseignement secondaire" data-en="Secondary Education">Enseignement secondaire</div>
+            <h3>Baccalauréat STI2D — spécialité SIN</h3>
+            <p class="timeline__place">Lycée Cabanis — Brive-la-Gaillarde (19100)</p>
+            <p data-fr="Baccalauréat technologique en Sciences et Technologies de l'Industrie et du Développement Durable, spécialité Systèmes d'Information et Numérique (SIN). Au programme : électronique, systèmes embarqués et bases de la programmation."
+              data-en="Technological baccalaureate in Industrial Technology and Sustainable Development, specializing in Digital Information Systems (SIN). Focus on electronics, embedded systems and programming fundamentals.">
+              Baccalauréat technologique en Sciences et Technologies de l'Industrie et du Développement Durable,
+              spécialité Systèmes d'Information et Numérique (SIN). Au programme : électronique, systèmes embarqués et bases de la programmation.</p>
+            <div class="timeline__skills">
+              <span data-fr="Électronique" data-en="Electronics">Électronique</span>
+              <span data-fr="Systèmes embarqués" data-en="Embedded Systems">Systèmes embarqués</span>
+              <span data-fr="Systèmes numériques" data-en="Digital Systems">Systèmes numériques</span>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -359,7 +363,7 @@
     </div>
   </section>
 
-  <section class="hobbies section" id="hobbies">
+  <section class="hobbies section section--compact" id="hobbies">
     <div class="container">
       <div class="section-label" data-fr="06 — Hors écran" data-en="06 — Beyond the Screen">06 — Hors écran</div>
       <h2 class="section-title" data-fr="La vie<br /><em>hors du code</em>" data-en="Life<br /><em>Outside Code</em>">La
@@ -371,9 +375,8 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M5.4 5.4l13.2 13.2"></path><path d="M18.6 5.4l-13.2 13.2"></path><path d="M5.4 5.4c4.6 2.4 8.7 6.5 11.1 11.1"></path><path d="M18.6 5.4c-4.6 2.4-8.7 6.5-11.1 11.1"></path></svg>
           </div>
           <h3>Basketball</h3>
-          <p data-fr="Je joue dans l'équipe universitaire et sur le terrain près de chez moi. Le basket fait partie de mon quotidien : l'esprit d'équipe et la compétition m'aident à rester concentré et équilibré."
-            data-en="Playing both in the university team and at the local playground nearby. Basketball is a daily ritual — the team spirit and the competition keep me sharp and grounded.">
-            Je joue dans l'équipe universitaire et sur le terrain près de chez moi. Le basket fait partie de mon quotidien : l'esprit d'équipe et la compétition m'aident à rester concentré et équilibré.</p>
+          <p data-fr="En équipe universitaire et sur le terrain près de chez moi : l'esprit d'équipe au quotidien."
+            data-en="With the university team and on the local court: team spirit every day.">En équipe universitaire et sur le terrain près de chez moi : l'esprit d'équipe au quotidien.</p>
         </div>
 
         <div class="hobby-card">
@@ -381,9 +384,8 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 6v12M19 6v12M9 12h6M2 9v6M22 9v6"/></svg>
           </div>
           <h3 data-fr="Musculation" data-en="Weightlifting">Musculation</h3>
-          <p data-fr="À la salle 4 à 5 fois par semaine. L'entraînement est une discipline autant mentale que physique : régularité, progression et dépassement de soi valent aussi bien à la salle que devant du code."
-            data-en="At the gym 4 to 5 times a week. Training is as much a mental discipline as a physical one — consistency, progress, and pushing limits apply both in the weight room and in code.">
-            À la salle 4 à 5 fois par semaine. L'entraînement est une discipline autant mentale que physique : régularité, progression et dépassement de soi valent aussi bien à la salle que devant du code.</p>
+          <p data-fr="4 à 5 séances par semaine : régularité et dépassement de soi."
+            data-en="4 to 5 sessions a week: consistency and pushing my limits.">4 à 5 séances par semaine : régularité et dépassement de soi.</p>
         </div>
 
         <div class="hobby-card">
@@ -391,9 +393,8 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M6 12h4"></path><path d="M8 10v4"></path><circle cx="15" cy="13" r="1"></circle><circle cx="18" cy="11" r="1"></circle></svg>
           </div>
           <h3 data-fr="Jeux vidéo et musique" data-en="Gaming & Music">Jeux vidéo et musique</h3>
-          <p data-fr="Passionné de jeux vidéo, je joue presque toujours en musique. Les deux vont de pair : la musique donne le rythme, le jeu aiguise la concentration et les réflexes."
-            data-en="A passionate gamer who almost always plays with music on. The two go hand in hand — music sets the tone, games sharpen focus and reflexes.">
-            Passionné de jeux vidéo, je joue presque toujours en musique. Les deux vont de pair : la musique donne le rythme, le jeu aiguise la concentration et les réflexes.</p>
+          <p data-fr="Toujours en musique : la concentration et les réflexes avant tout."
+            data-en="Always with music on: focus and reflexes first.">Toujours en musique : la concentration et les réflexes avant tout.</p>
         </div>
 
         <div class="hobby-card">
@@ -401,9 +402,8 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.2-1.1.6L3 8l6 4-3 3-3.2-1.2c-.4-.1-.8.1-1 .5L1.5 15l5.5 2 2 5.5.7-.3c.4-.2.6-.6.5-1L9 18l3-3 4 6h1.2c.4-.2.7-.6.6-1.1z"></path></svg>
           </div>
           <h3 data-fr="Voyages" data-en="Travelling">Voyages</h3>
-          <p data-fr="J'ai la chance d'avoir déjà beaucoup voyagé, et je compte bien continuer. Découvrir de nouveaux lieux, d'autres cultures et d'autres points de vue est pour moi l'une des meilleures façons d'apprendre."
-            data-en="Lucky enough to have travelled quite a bit already, and it's something I intend to keep doing. Discovering new places, cultures and perspectives is one of the best ways to grow.">
-            J'ai la chance d'avoir déjà beaucoup voyagé, et je compte bien continuer. Découvrir de nouveaux lieux, d'autres cultures et d'autres points de vue est pour moi l'une des meilleures façons d'apprendre.</p>
+          <p data-fr="10 pays visités, que je raconte dans mon carnet de voyage."
+            data-en="10 countries so far, documented in my travel journal.">10 pays visités, que je raconte dans mon carnet de voyage.</p>
         </div>
 
       </div>

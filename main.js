@@ -106,7 +106,7 @@ if (themeToggle) {
 
 // ── Reveal on scroll ─────────────────────────
 const revealEls = document.querySelectorAll(
-  '.section-label, .section-title, .about__text, .about__image-wrap, .skill-card, .project-card, .contact__left, .contact__form, .lang-card, .hobby-card, .timeline__item'
+  '.section-label, .section-title, .about__text, .about__image-wrap, .skill-row, .project-card, .contact__left, .contact__form, .lang-card, .hobby-card, .timeline__item'
 );
 
 revealEls.forEach(el => el.classList.add('reveal'));
@@ -134,10 +134,10 @@ const barObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.3 });
 
-document.querySelectorAll('.skill-card, .lang-card').forEach(card => barObserver.observe(card));
+document.querySelectorAll('.lang-card').forEach(card => barObserver.observe(card));
 
 // ── Stagger grid children ────────────────────
-document.querySelectorAll('.skills__grid, .projects__grid, .hobbies__grid, .languages__grid').forEach(grid => {
+document.querySelectorAll('.skills__list, .projects__grid, .hobbies__grid, .languages__grid').forEach(grid => {
   grid.querySelectorAll(':scope > *').forEach((child, i) => {
     child.style.transitionDelay = `${i * 0.07}s`;
   });
